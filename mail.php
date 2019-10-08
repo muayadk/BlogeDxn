@@ -5,7 +5,7 @@ if(isset($_POST["submit"])) {
 	            
 				$to = "moayadabdo0@gmail.com";
 				
-				$subject = 'Nano Message';
+				$subject = 'BlogeDxn Message';
 				
 				$headers = "MIME-Version: 1.0" . "\n";
 				$headers .= "Content-type:text/html;charset=UTF-8" . "\n";
@@ -19,13 +19,13 @@ if(isset($_POST["submit"])) {
 						</head>
 						<body>
 					
-							<center>
+							<div class=''>
 							<h2>Name</h2>". $_POST['name']."<br/>
-							<h2>tel:</h2> ". $_POST['tel']."<br/>
+							<h2>Mobile:</h2> ". $_POST['tel']."<br/>
 							<h2>Email</h2><br/>". $_POST['email']."<br/>
 					
 							<h2>Message</h2><br/>".$_POST['message']."			   
-							</center>
+							</div>
 						</body>
 						</html>";
                
@@ -41,7 +41,7 @@ if(isset($_POST["submit"])) {
   }
 ?>
 
-	<center class="info">
+	<center class="alert-info">
 	<?php 
 		if(isset($message))
 		{
