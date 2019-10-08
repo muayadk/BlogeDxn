@@ -9,7 +9,7 @@ if(isset($_POST["submit"])) {
 				
 				$headers = "MIME-Version: 1.0" . "\n";
 				$headers .= "Content-type:text/html;charset=UTF-8" . "\n";
-				$headers .="From: Nano Website Message <no-reply@domain.com>\r\n";
+				$headers .="From: DxnBloge <no-reply@domain.com>\r\n";
 				
 				$body ="<!DOCTYPE html>
 						<html dir = 'ltr'>
